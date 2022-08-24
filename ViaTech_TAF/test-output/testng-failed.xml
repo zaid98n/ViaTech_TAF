@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.singlestorefront.utility.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.singlestorefront.testcases.SignInPageTest">
+        <methods>
+          <include name="reporting"/>
+          <include name="verifyLogoTest"/>
+          <include name="reportingend"/>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="launchbrowser"/>
+          <include name="loadconfig"/>
+        </methods>
+      </class> <!-- com.singlestorefront.testcases.SignInPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
