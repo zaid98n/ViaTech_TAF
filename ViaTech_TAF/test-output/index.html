@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\SSF\ViaTech_TAF\testng.xml</span>
+                    <span>D:\SSF GIT\ViaTech_TAF\ViaTech_TAF\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.singlestorefront.testcases.HomePageTest" class="method navigator-link" hash-for-method="itempage">itempage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.singlestorefront.testcases.ItemManagementTest" class="method navigator-link" hash-for-method="CreateItem">CreateItem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.singlestorefront.testcases.HomePageTest</span>
+              <span class="class-name">com.singlestorefront.testcases.ItemManagementTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="itempage">
-                  </a> <!-- itempage -->
-                  <span class="method-name">itempage</span>
+                  <a name="CreateItem">
+                  </a> <!-- CreateItem -->
+                  <span class="method-name">CreateItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\SSF\ViaTech_TAF\testng.xml</span>
+            <span class="header-content">D:\SSF GIT\ViaTech_TAF\ViaTech_TAF\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,7 +148,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.singlestorefront.testcases.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.singlestorefront.testcases.ItemManagementTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -190,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'itempage')
-data.setCell(0, 2, 'com.singlestorefront.testcases.HomePageTest')
-data.setCell(0, 3, 489);
+data.setCell(0, 1, 'CreateItem')
+data.setCell(0, 2, 'com.singlestorefront.testcases.ItemManagementTest')
+data.setCell(0, 3, 13501);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 489 ms</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -223,26 +223,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.singlestorefront.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.singlestorefront.testcases.ItemManagementTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">loadconfig</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">reporting</span>
-                <span class="method-start">12 ms</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchbrowser(chrome)</span>
-                <span class="method-start">309 ms</span>
+                <span class="method-start">365 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">itempage</span>
-                <span class="method-start">34093 ms</span>
+                <span class="method-name">CreateItem</span>
+                <span class="method-start">28269 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">41785 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">reportingend</span>
-                <span class="method-start">34626 ms</span>
+                <span class="method-start">42241 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -9,18 +9,29 @@ import com.singlestorefront.base.BaseClass;
 
 public class HomePage extends BaseClass {
 	
-	@FindBy(xpath = "(//a[@class=\"has-submenu\"])[7]")
+	@FindBy(xpath = "//li[@class=\"submenu hideadminmenu\"]")
 	private WebElement Item;
+	
+	@FindBy(xpath = "//a[@class=\"btn btn-primary\"]")
+	private WebElement okBtn;
+	
+	@FindBy(xpath = "//li[@id=\"ctl00_uclSiteTopMenu_liItemManagement\"]")
+	private WebElement itemManagement;
 	
 	public HomePage() {
 		PageFactory.initElements(getDriver(), this);
 	}
 	
-	public void moveToItem() throws Exception {
+	public ItemManagement moveToItem() throws Exception {
+		Action.fluentWait(getDriver(), okBtn, 30);
+		Action.simpleClick(okBtn);
 		Action.fluentWait(getDriver(), Item, 30);
 		Action.mouseOverElement(getDriver(), Item);
 		Action.click(Item);
-		Thread.sleep(30);
+		Action.fluentWait(getDriver(), itemManagement, 20);
+		Action.click(itemManagement);
+		//Thread.sleep(30);
+		return new ItemManagement();
 	}
 
 }
