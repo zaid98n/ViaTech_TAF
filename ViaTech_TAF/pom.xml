@@ -103,7 +103,7 @@
 			    <version>3.0.0-M5</version>
 			<configuration>
 				<suiteXmlFiles>
-					<suiteXmlFile>testng_Regression.xml</suiteXmlFile>
+					<suiteXmlFile>testng.xml</suiteXmlFile>
 				</suiteXmlFiles>
 			<testFailureIgnore>true</testFailureIgnore>
 				<!-- <systemPropertyVariables>

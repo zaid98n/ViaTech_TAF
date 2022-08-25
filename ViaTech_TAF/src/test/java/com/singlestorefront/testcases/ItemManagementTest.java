@@ -10,7 +10,7 @@ import com.singlestorefront.pageobjects.HomePage;
 import com.singlestorefront.pageobjects.ItemManagement;
 import com.singlestorefront.pageobjects.SignInPage;
 
-public class HomePageTest extends BaseClass {
+public class ItemManagementTest extends BaseClass {
 	
 	SignInPage signinpage;
 	HomePage homepage;
@@ -18,11 +18,13 @@ public class HomePageTest extends BaseClass {
 	
 	@Parameters("browser")
 	@BeforeMethod(groups= {"Smoke", "Regression"})
-	public void launchbrowser(String browser) {
+	public void launchbrowser(String browser) throws Exception {
 		launchApp(browser);
 		signinpage = new SignInPage();
 		homepage = new HomePage();
 		homepage = signinpage.login(prop.getProperty("username"), prop.getProperty("password"));
+		itemmanagement = new ItemManagement();
+		itemmanagement = homepage.moveToItem();
 		
 	}
 	
@@ -32,8 +34,8 @@ public class HomePageTest extends BaseClass {
 	}
 	
 	@Test
-	public void itempage() throws Exception {
-		itemmanagement = homepage.moveToItem();
+	public void CreateItem() throws Exception {
+		itemmanagement.Create();
 	}
 
 }
